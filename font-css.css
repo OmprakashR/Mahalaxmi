@@ -1,0 +1,63 @@
+/** font **/
+
+/*Ronzino*/
+@font-face {
+    font-family: 'Redaction';
+    src: url('./font/RedactionItalic-lgB8w.otf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'ronzino-bold';
+    src: url('./font/ronzino/web/Ronzino-Bold.woff2') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+ 
+@font-face {
+    font-family: 'ronzino-regular';
+    src: url('./font/ronzino/web/Ronzino-Regular.woff2') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ronzino-medium';
+    src: url('./font/ronzino/web/Ronzino-Medium.woff2') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+}
+ 
+
+body{
+    font-family: 'ronzino-regular', sans-serif; /* Fallback to sans-serif */
+    font-size: 1.2em;
+    font-weight: normal; /* Medium weight for better emphasis */line-height: 1.5; /* Improve readability */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+.font-redaction {
+    font-family: 'Redaction', sans-serif; /* Fallback to sans-serif */
+    font-size: 1.2em;
+    font-weight: normal; /* Medium weight for better emphasis */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+ 
+
+.font-ronzino{
+    font-family: 'ronzino-regular', sans-serif; /* Fallback to sans-serif */
+    font-size: 1.2em;
+    font-weight: normal; /* Medium weight for better emphasis */line-height: 1.5; /* Improve readability */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+} 
+.font-ronzino-bold{
+    font-family: 'ronzino-bold', sans-serif; /* Fallback to sans-serif */
+    font-size: 1.2em;
+    font-weight: normal; /* Medium weight for better emphasis */line-height: 1.5; /* Improve readability */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+.font-ronzino-medium{
+    font-family: 'ronzino-medium', sans-serif; /* Fallback to sans-serif */
+    font-size: 1.2em;
+    font-weight: normal; /* Medium weight for better emphasis */line-height: 1.5; /* Improve readability */
+    transition: all 0.3s ease; /* Smooth transition for hover effects */
+}

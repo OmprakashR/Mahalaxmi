@@ -8,9 +8,11 @@
     --color-Luminous: #f0ebce;
     --color-natural-dark: #131b17;
     --color-natural-green: #4e6c50;
+    --color-light-sub-dark:#444943;
   --text-90: 5.625rem; 
   --text-56: 3.5rem;
-  --space:4.5rem;
+  --space:4rem;
+  /* --space:4.5rem; */
   }
 
 @layer base {

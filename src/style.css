@@ -1,5 +1,6 @@
 @import "tailwindcss";
 @import "tailwindcss-intersect";
+@import "tailwindcss-animated";
 @plugin "tailwindcss-motion";
 
 @theme {
@@ -10,6 +11,7 @@
     --color-natural-green: #4e6c50;
     --color-light-sub-dark:#444943;
     --color-semi-dark: #D0D4D2;
+    --color-green-dark:#395144;
   --text-90: 5.625rem; 
   --text-56: 3.5rem;
   --space:4rem;

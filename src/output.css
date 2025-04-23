@@ -1090,6 +1090,11 @@
       width: calc(3/5 * 100%);
     }
   }
+  .md\:w-\[30\%\] {
+    @media (width >= 48rem) {
+      width: 30%;
+    }
+  }
   .md\:w-\[572px\] {
     @media (width >= 48rem) {
       width: 572px;

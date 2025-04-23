@@ -37,7 +37,6 @@ body{
 }
 .font-redaction {
     font-family: 'Redaction', sans-serif; /* Fallback to sans-serif */
-    font-size: 1.2em;
     font-weight: normal; /* Medium weight for better emphasis */
     transition: all 0.3s ease; /* Smooth transition for hover effects */
 }

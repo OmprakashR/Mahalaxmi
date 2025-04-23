@@ -1,0 +1,632 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project - MAhalaxmi-Infra</title>
+    <meta name="description" content=" ahalaxmi main Project " />
+    <meta name="keywords" content=" ahalaxmi main Project" />
+    <meta name="author" content="Mahalaxmi" />
+    <!--font-->
+
+    <!--css tailwind-->
+
+    <link rel="stylesheet" href="font-css.css" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <script
+      defer
+      src="https://unpkg.com/tailwindcss-intersect@2.x.x/dist/observer.min.js"
+    ></script>
+  </head>
+
+  <body class="bg-[#ffff0] text-natural-dark">
+    <!--header section-->
+    <header class="bg-iravi p-2  md:block hidden sticky top-0 z-50">
+      <nav
+        class="flex justify-between items-center max-w-screen-3xl px-3 md:px-(--space) mx-auto"
+      >
+      <div class="relative">
+          
+        <img
+          src="./images/MAhalaxmi-Infra-LOGO.png"
+          alt="MAhalaxmi-Infra"
+          class="w-32 h-full"
+        />
+        <a href="index.html" class="absolute top-0 start-0 end-0 bottom-0" > </a>
+      </div>
+        <div>
+          <menu>
+            <ul class="flex gap-8">
+              <li><a href="About.html" class="text-sm">About</a></li>
+              <li><a href="Project.html" class="text-sm">Project </a></li>
+              <li><a href="services.html" class="text-sm">Events</a></li>
+              <li><a href="portfolio.html" class="text-sm">Blogs</a></li>
+              <li><a href="Career.html" class="text-sm">Career</a></li>
+              <li><a href="contact.html" class="text-sm">Contact</a></li>
+            </ul>
+          </menu>
+        </div>
+        <button
+          type="button"
+          class="bg-iravi-dark text-base flex items-center gap-2 px-4 py-2 rounded-full cursor-pointer"
+        >
+          <span>Get in Touch </span>
+          <span> <img src="images/icons/right_arrow.svg" alt="arrow"  width="16" height="16" loading="lazy"/> </span>
+        </button>
+      </nav>
+    </header>
+    <!--header section end-->
+
+    <!--hero About section-->
+    <section>
+      <div
+        class="max-w-screen-3xl px-3 md:px-(--space) mx-auto py-6  "
+      >
+ 
+<div class="relative rounded-20  overflow-hidden"> 
+        
+  <div class="absolute top-0 left-0 right-0 bottom-0 bg-gradient-to-b from-transparent to-[#131B17]/90"></div>
+        <div
+          class="absolute   w-[80vw]
+
+          top-0 left-0 right-0 bottom-0 flex items-end justify-center text-white font-normal text-4xl z-10"
+        >
+        <h1 class="md:text-6xl md:leading-16 leading-9 lg:text-90 pl-4 md:pl-[68px] pb-4 md:pb-[68px] tracking-tight text-3xl font-normal   lg:leading-24">
+          Diverse
+          <span
+            class="font-redaction intersect:motion-opacity-in-0 intersect:motion-translate-y-in-100 intersect:motion-duration-[2s] intersect:motion-blur-in-md"
+            >Portfolio </span
+          > of Luxurious Flats, Grand Townships and
+          <span
+          class="font-redaction intersect:motion-opacity-in-0 intersect:motion-translate-y-in-200 intersect:motion-duration-[2s] intersect:motion-blur-in-md"
+          > Secure</span
+        > Plots
+        </h1>
+       
+</div>
+
+<picture>
+          <img
+            src="./images/project.png"
+            alt="hero"
+            loading="lazy"
+            class="w-full  h-auto md:object-fill object-center min-h-[30vh] max-h-[30vh] md:max-h-[90vh] lg:h-[640px] rounded-3xl" />
+        </picture>
+      </div>
+      </div>
+    </section>
+    <!--hero section end-->
+ 
+
+  <!--  crafting -->
+  <section class=" mt-9  pb-10 md:pb-10 lg:py-[120px] border-t border-slate-200">
+      <div class="max-w-screen-3xl mx-auto px-3 md:px-(--space) ">
+       <!--filter-->
+         <div class="flex gap-1 lg:gap-6 pb-14 lg:pt-0 pt-4 flex-wrap">
+<label for="All" class="items-center gap-1 rounded-full border border-semi-dark cursor-pointer flex  py-[5px] pe-3  ps-[10px] has-checked:bg-natural-dark has-checked:text-white transition-all hover:bg-natural-dark hover:text-white " >
+  <input id="All" type="radio" name="property"  checked class="peer/all text-natural-dark hidden" />
+
+ <span>
+  <svg width="20" height="20" fill="currentColor" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <path d="M18.0398 13.4374C18.1224 13.5807 18.1448 13.7508 18.1022 13.9106C18.0596 14.0703 17.9554 14.2067 17.8125 14.2898L10.3125 18.6648C10.2169 18.7205 10.1083 18.7499 9.99766 18.7499C9.88703 18.7499 9.77838 18.7205 9.68281 18.6648L2.18281 14.2898C2.04195 14.2051 1.94009 14.0684 1.8993 13.9092C1.8585 13.75 1.88205 13.5812 1.96484 13.4392C2.04764 13.2972 2.18301 13.1936 2.34166 13.1507C2.50031 13.1078 2.66946 13.1292 2.8125 13.2101L10 17.4015L17.1875 13.2101C17.3308 13.1275 17.5009 13.1051 17.6606 13.1477C17.8204 13.1903 17.9567 13.2945 18.0398 13.4374ZM17.1875 9.46009L10 13.6515L2.8125 9.46009C2.67019 9.38924 2.50623 9.37528 2.35399 9.42105C2.20175 9.46682 2.07267 9.56888 1.99303 9.70646C1.91338 9.84405 1.88916 10.0068 1.92529 10.1616C1.96142 10.3164 2.05518 10.4517 2.1875 10.5398L9.6875 14.9148C9.78307 14.9705 9.89171 14.9999 10.0023 14.9999C10.113 14.9999 10.2216 14.9705 10.3172 14.9148L17.8172 10.5398C17.8892 10.499 17.9524 10.4444 18.0032 10.379C18.0539 10.3136 18.0912 10.2388 18.1128 10.1589C18.1344 10.079 18.1399 9.99559 18.129 9.91354C18.1181 9.8315 18.091 9.75243 18.0493 9.68094C18.0076 9.60944 17.9521 9.54694 17.8861 9.49706C17.82 9.44718 17.7447 9.41092 17.6646 9.39037C17.5844 9.36983 17.5009 9.36541 17.419 9.37738C17.3371 9.38935 17.2584 9.41746 17.1875 9.46009ZM1.875 6.24994C1.87525 6.14047 1.90425 6.03299 1.95909 5.93824C2.01393 5.8435 2.0927 5.76483 2.1875 5.71009L9.6875 1.33509C9.78307 1.27936 9.89171 1.25 10.0023 1.25C10.113 1.25 10.2216 1.27936 10.3172 1.33509L17.8172 5.71009C17.9115 5.76514 17.9898 5.84395 18.0442 5.93867C18.0986 6.03339 18.1272 6.14071 18.1272 6.24994C18.1272 6.35917 18.0986 6.46649 18.0442 6.56121C17.9898 6.65593 17.9115 6.73474 17.8172 6.78978L10.3172 11.1648C10.2216 11.2205 10.113 11.2499 10.0023 11.2499C9.89171 11.2499 9.78307 11.2205 9.6875 11.1648L2.1875 6.78978C2.0927 6.73505 2.01393 6.65637 1.95909 6.56163C1.90425 6.46689 1.87525 6.35941 1.875 6.24994ZM3.74063 6.24994L10 9.9015L16.2594 6.24994L10 2.59838L3.74063 6.24994Z" class="has-checked:fill-white" fill=""/>
+  </svg>
+  </span> <span  >
+    All
+  </span> 
+</label>
+<label for="Completed" class="items-center gap-1 rounded-full border border-semi-dark cursor-pointer flex py-[5px] pe-3  ps-[10px] has-checked:bg-natural-dark has-checked:text-white transition-all hover:bg-natural-dark hover:text-white" >
+  <input id="Completed" type="radio" name="property" class="text-natural-dark hidden" />
+<span>
+  <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M13.5672 7.68281C13.6253 7.74086 13.6714 7.80979 13.7029 7.88566C13.7343 7.96154 13.7505 8.04287 13.7505 8.125C13.7505 8.20713 13.7343 8.28846 13.7029 8.36434C13.6714 8.44021 13.6253 8.50914 13.5672 8.56719L9.19219 12.9422C9.13415 13.0003 9.06522 13.0464 8.98934 13.0779C8.91347 13.1093 8.83214 13.1255 8.75 13.1255C8.66787 13.1255 8.58654 13.1093 8.51067 13.0779C8.43479 13.0464 8.36586 13.0003 8.30782 12.9422L6.43282 11.0672C6.31554 10.9499 6.24966 10.7909 6.24966 10.625C6.24966 10.4591 6.31554 10.3001 6.43282 10.1828C6.55009 10.0655 6.70915 9.99965 6.875 9.99965C7.04086 9.99965 7.19992 10.0655 7.31719 10.1828L8.75 11.6164L12.6828 7.68281C12.7409 7.6247 12.8098 7.5786 12.8857 7.54715C12.9615 7.5157 13.0429 7.49951 13.125 7.49951C13.2071 7.49951 13.2885 7.5157 13.3643 7.54715C13.4402 7.5786 13.5091 7.6247 13.5672 7.68281ZM18.125 10C18.125 11.607 17.6485 13.1779 16.7557 14.514C15.8629 15.8502 14.594 16.8916 13.1093 17.5065C11.6247 18.1215 9.99099 18.2824 8.4149 17.9689C6.8388 17.6554 5.39106 16.8815 4.25476 15.7452C3.11846 14.6089 2.34463 13.1612 2.03112 11.5851C1.71762 10.009 1.87852 8.37535 2.49348 6.8907C3.10844 5.40605 4.14985 4.1371 5.486 3.24431C6.82214 2.35152 8.39303 1.875 10 1.875C12.1542 1.87727 14.2195 2.73403 15.7427 4.25727C17.266 5.78051 18.1227 7.84581 18.125 10ZM16.875 10C16.875 8.64025 16.4718 7.31104 15.7164 6.18045C14.9609 5.04987 13.8872 4.16868 12.631 3.64833C11.3747 3.12798 9.99238 2.99183 8.65876 3.2571C7.32514 3.52237 6.10013 4.17716 5.13864 5.13864C4.17716 6.10013 3.52238 7.32513 3.2571 8.65875C2.99183 9.99237 3.12798 11.3747 3.64833 12.6309C4.16868 13.8872 5.04987 14.9609 6.18046 15.7164C7.31105 16.4718 8.64026 16.875 10 16.875C11.8227 16.8729 13.5702 16.1479 14.8591 14.8591C16.1479 13.5702 16.8729 11.8227 16.875 10Z" fill="currentColor"/>
+    </svg>
+    
+</span>
+<span>
+  Completed
+
+</span>
+</label>
+<label for="Ongoing" class="items-center gap-1 rounded-full border border-semi-dark cursor-pointer flex py-[5px] pe-3  ps-[10px] has-checked:bg-natural-dark has-checked:text-white transition-all hover:bg-natural-dark hover:text-white" >
+  <input id="Ongoing" type="radio" name="property" class="text-natural-dark hidden" />
+  <span>
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17.4885 3.68144C17.47 3.3767 17.3406 3.08927 17.1247 2.87338C16.9088 2.6575 16.6214 2.52809 16.3166 2.50957C15.3338 2.45097 12.8221 2.54082 10.7377 4.62441L10.3666 5.00019H5.80958C5.6448 4.99926 5.48148 5.03111 5.32911 5.09388C5.17675 5.15665 5.03839 5.24909 4.92208 5.36582L2.24239 8.04707C2.07806 8.21129 1.96274 8.41807 1.90939 8.64419C1.85603 8.87031 1.86675 9.10682 1.94034 9.32719C2.01393 9.54756 2.14748 9.74305 2.326 9.89174C2.50452 10.0404 2.72095 10.1364 2.95099 10.1689L5.95646 10.5885L9.41036 14.0424L9.82989 17.0494C9.86215 17.2795 9.95812 17.4959 10.1069 17.6743C10.2558 17.8527 10.4515 17.9858 10.6721 18.0588C10.8005 18.1017 10.9351 18.1236 11.0705 18.1236C11.2345 18.1239 11.3969 18.0918 11.5485 18.029C11.7 17.9663 11.8376 17.8742 11.9533 17.758L14.6346 15.0783C14.7513 14.962 14.8438 14.8236 14.9065 14.6713C14.9693 14.5189 15.0011 14.3556 15.0002 14.1908V9.63379L15.3729 9.26113C17.4572 7.17675 17.5471 4.66504 17.4885 3.68144ZM5.80958 6.25019H9.11661L6.02833 9.33769L3.12521 8.933L5.80958 6.25019ZM11.6229 5.51191C12.2234 4.90764 12.946 4.43848 13.7424 4.13575C14.5387 3.83303 15.3905 3.70371 16.2408 3.75644C16.2956 4.60721 16.1676 5.45984 15.8655 6.25704C15.5634 7.05424 15.0941 7.77753 14.4893 8.37832L10.0002 12.8658L7.13458 10.0002L11.6229 5.51191ZM13.7502 14.1908L11.0682 16.8752L10.6627 13.9713L13.7502 10.8838V14.1908ZM7.95646 14.933C7.60489 15.7033 6.42911 17.5002 3.12521 17.5002C2.95945 17.5002 2.80047 17.4343 2.68326 17.3171C2.56605 17.1999 2.50021 17.041 2.50021 16.8752C2.50021 13.5713 4.29708 12.3955 5.06739 12.0432C5.14208 12.0091 5.22275 11.9901 5.30479 11.9872C5.38683 11.9843 5.46863 11.9976 5.54553 12.0263C5.62243 12.0551 5.69292 12.0987 5.75297 12.1546C5.81302 12.2106 5.86146 12.2778 5.89552 12.3525C5.92958 12.4272 5.9486 12.5079 5.95148 12.5899C5.95437 12.672 5.94107 12.7538 5.91234 12.8307C5.88361 12.9076 5.84002 12.9781 5.78405 13.0381C5.72808 13.0982 5.66083 13.1466 5.58614 13.1807C5.0838 13.4096 3.97521 14.1463 3.77989 16.2205C5.85411 16.0252 6.59239 14.9166 6.81974 14.4143C6.8538 14.3396 6.90224 14.2723 6.96229 14.2163C7.02234 14.1604 7.09283 14.1168 7.16973 14.0881C7.24662 14.0593 7.32843 14.046 7.41047 14.0489C7.49251 14.0518 7.57317 14.0708 7.64786 14.1049C7.72255 14.1389 7.7898 14.1874 7.84577 14.2474C7.90174 14.3075 7.94533 14.378 7.97406 14.4549C8.00279 14.5318 8.01609 14.6136 8.0132 14.6956C8.01032 14.7777 7.9913 14.8583 7.95724 14.933H7.95646Z" fill="currentColor"/>
+      </svg>
+      
+  </span>
+<span>
+  Ongoing
+</span>  
+
+</label>
+<label for="Upcoming" class="items-center gap-1 rounded-full border border-semi-dark cursor-pointer flex py-[5px] pe-3  ps-[10px] has-checked:bg-natural-dark has-checked:text-white transition-all hover:bg-natural-dark hover:text-white" >
+  
+  <input id="Upcoming" type="radio" name="property" class="text-natural-dark hidden" />
+
+  <span>
+    <svg width="20" height="20" viewBox="0 0 20 20" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+      <path d="M16.6925 15.1833C16.7506 15.2414 16.7967 15.3103 16.8281 15.3862C16.8595 15.4621 16.8757 15.5434 16.8757 15.6255C16.8757 15.7076 16.8595 15.7889 16.8281 15.8648C16.7967 15.9407 16.7506 16.0096 16.6925 16.0677C16.6345 16.1257 16.5655 16.1718 16.4897 16.2032C16.4138 16.2347 16.3325 16.2508 16.2503 16.2508C16.1682 16.2508 16.0869 16.2347 16.011 16.2032C15.9352 16.1718 15.8662 16.1257 15.8082 16.0677L10.0003 10.2591L4.19253 16.0677C4.07526 16.185 3.9162 16.2508 3.75035 16.2508C3.58449 16.2508 3.42544 16.185 3.30816 16.0677C3.19088 15.9504 3.125 15.7913 3.125 15.6255C3.125 15.4596 3.19088 15.3006 3.30816 15.1833L9.55816 8.9333C9.6162 8.87519 9.68514 8.82909 9.76101 8.79764C9.83688 8.76619 9.91821 8.75 10.0003 8.75C10.0825 8.75 10.1638 8.76619 10.2397 8.79764C10.3156 8.82909 10.3845 8.87519 10.4425 8.9333L16.6925 15.1833ZM4.19253 9.81768L10.0003 4.00909L15.8082 9.81768C15.8662 9.87575 15.9352 9.92181 16.011 9.95324C16.0869 9.98466 16.1682 10.0008 16.2503 10.0008C16.3325 10.0008 16.4138 9.98466 16.4897 9.95324C16.5655 9.92181 16.6345 9.87575 16.6925 9.81768C16.7506 9.75961 16.7967 9.69067 16.8281 9.6148C16.8595 9.53893 16.8757 9.45761 16.8757 9.37549C16.8757 9.29337 16.8595 9.21205 16.8281 9.13618C16.7967 9.06031 16.7506 8.99137 16.6925 8.9333L10.4425 2.6833C10.3845 2.62519 10.3156 2.57909 10.2397 2.54764C10.1638 2.51619 10.0825 2.5 10.0003 2.5C9.91821 2.5 9.83688 2.51619 9.76101 2.54764C9.68514 2.57909 9.6162 2.62519 9.55816 2.6833L3.30816 8.9333C3.19088 9.05058 3.125 9.20964 3.125 9.37549C3.125 9.54134 3.19088 9.7004 3.30816 9.81768C3.42544 9.93496 3.58449 10.0008 3.75035 10.0008C3.9162 10.0008 4.07526 9.93496 4.19253 9.81768Z" fill="currentColor"/>
+      </svg>
+      
+  </span>
+  
+<span>
+  Upcoming
+</span>  
+</label>
+
+         </div>
+
+<!--filter End-->
+<div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 gap-y-14 mt-6">
+  
+  <!--layer 1-->
+  <div class="bg-white flex flex-col gap-6 relative ">
+    <div class="absolute top-4 right-4 z-20 bg-natural-dark py-[5px] flex justify-between items-center gap-1 px-[10px] rounded-full"> 
+      <span>
+        <img
+          src="./images/icons/CheckCircle.svg"
+          alt="featured"
+          width="20" loading="lazy"
+          height="20"
+        />
+      </span>
+      <span class="text-white text-sm font-medium">
+        Completed
+        </span>
+    </div>
+    <img
+      src="./images/slider/Prop_4.png"
+      alt="mahalaxmi" loading="lazy" width="421" height="270"
+      class="w-full h-[270px] object-cover rounded-2xl  "
+    />
+    <h2 class="text-2xl md:text-[32px] font-semibold mt-4">Malahaxmi Nagar-35</h2>
+    <p class="text-sm text-gray-600">
+      The layout is NIT / IMMRDA sanctioned with RL Bank Finance is
+      available.
+    </p>
+    <p class="text-sm text-gray-600 inline-flex gap-1">
+      <span
+        ><img
+          src="./images/icons/MapPin.svg"
+          width="24" loading="lazy"
+          height="24"
+          alt="mappin"
+      /></span>
+      <span> Kotewada, Nagpur</span>
+    </p>
+  </div>
+  <div class="bg-white flex flex-col gap-6 relative">
+    <div class="absolute top-4 right-4 z-20 bg-natural-dark py-[5px] flex justify-between items-center gap-1 px-[10px] rounded-full"> 
+      <span>
+        <img
+          src="./images/icons/RocketLaunch.svg"
+          alt="featured"
+          width="20" loading="lazy"
+          height="20"
+        />
+      </span>
+      <span class="text-white text-sm font-medium">
+        Ongoing
+        </span>
+    </div>
+    <img
+      src="./images/slider/prop_1.png"
+      alt="featured1" loading="lazy" width="421" height="270"
+      class="w-full h-[270px] object-cover rounded-2xl  "
+    />
+    <h2 class="text-2xl md:text-[32px] font-semibold mt-4">Malahaxmi Nagar-13</h2>
+    <p class="text-sm text-gray-600">
+      The layout is NIT / IMMRDA sanctioned with RL Bank Finance is
+      available.
+    </p>
+    <p class="text-sm text-gray-600 inline-flex gap-1">
+      <span
+        ><img
+          src="./images/icons/MapPin.svg"
+          width="24" loading="lazy"
+          height="24"
+          alt="mappin"
+      /></span>
+      <span> Kotewada, Nagpur</span>
+    </p>
+  </div>
+  <div class="bg-white flex flex-col gap-6 relative">
+    <div class="absolute top-4 right-4 z-20 bg-natural-dark py-[5px] flex justify-between items-center gap-1 px-[10px] rounded-full"> 
+      <span>
+        <img
+          src="./images/icons/CaretDoubleUp.svg"
+          alt="featured"
+          width="20" loading="lazy"
+          height="20"
+        />
+      </span>
+      <span class="text-white text-sm font-medium">
+        Upcoming
+        </span>
+    </div>
+    <img
+      src="./images/slider/Prop_2.png"
+      alt="featured1" loading="lazy"
+      class="w-full h-[270px] object-cover rounded-t-2xl "
+    />
+    <h2 class="text-2xl md:text-[32px] font-semibold mt-4">Malahaxmi Nagar-42</h2>
+    <p class="text-sm text-gray-600">
+      The layout is NIT / IMMRDA sanctioned with RL Bank Finance is
+      available.
+    </p>
+    <p class="text-sm text-gray-600 inline-flex gap-1">
+      <span
+        ><img
+          src="./images/icons/MapPin.svg"
+          width="24"
+          height="24" loading="lazy"
+          alt="mappin"
+      /></span>
+      <span> Kotewada, Nagpur</span>
+    </p>
+  </div>
+  
+  <!--layer 2-->
+    <div class="bg-white flex flex-col gap-6 relative">
+      <div class="absolute top-4 right-4 z-20 bg-natural-dark py-[5px] flex justify-between items-center gap-1 px-[10px] rounded-full"> 
+        <span>
+          <img
+            src="./images/icons/CheckCircle.svg"
+            alt="featured"
+            width="20" loading="lazy"
+            height="20"
+          />
+        </span>
+        <span class="text-white text-sm font-medium">
+          Completed
+          </span>
+      </div>
+      <img
+        src="./images/slider/mahalaxmi.png"
+        alt="mahalaxmi" loading="lazy" width="421" height="270"
+        class="w-full h-[270px] object-cover rounded-2xl  "
+      />
+      <h2 class="text-2xl md:text-[32px] font-semibold mt-4">Malahaxmi Nagar-35</h2>
+      <p class="text-sm text-gray-600">
+        The layout is NIT / IMMRDA sanctioned with RL Bank Finance is
+        available.
+      </p>
+      <p class="text-sm text-gray-600 inline-flex gap-1">
+        <span
+          ><img
+            src="./images/icons/MapPin.svg"
+            width="24" loading="lazy"
+            height="24"
+            alt="mappin"
+        /></span>
+        <span> Kotewada, Nagpur</span>
+      </p>
+    </div>
+    <div class="bg-white flex flex-col gap-6 relative">
+      <div class="absolute top-4 right-4 z-20 bg-natural-dark py-[5px] flex justify-between items-center gap-1 px-[10px] rounded-full"> 
+        <span>
+          <img
+            src="./images/icons/RocketLaunch.svg"
+            alt="featured"
+            width="20" loading="lazy"
+            height="20"
+          />
+        </span>
+        <span class="text-white text-sm font-medium">
+          Ongoing
+          </span>
+      </div>
+      <img
+        src="./images/slider/Untitled.png"
+        alt="featured1" loading="lazy" width="421" height="270"
+        class="w-full h-[270px] object-cover rounded-2xl  "
+      />
+      <h2 class="text-2xl md:text-[32px] font-semibold mt-4">Malahaxmi Nagar-40</h2>
+      <p class="text-sm text-gray-600">
+        The layout is NIT / IMMRDA sanctioned with RL Bank Finance is
+        available.
+      </p>
+      <p class="text-sm text-gray-600 inline-flex gap-1">
+        <span
+          ><img
+            src="./images/icons/MapPin.svg"
+            width="24" loading="lazy"
+            height="24"
+            alt="mappin"
+        /></span>
+        <span> Kotewada, Nagpur</span>
+      </p>
+    </div>
+    <div class="bg-white flex flex-col gap-6 relative">
+      <div class="absolute top-4 right-4 z-20 bg-natural-dark py-[5px] flex justify-between items-center gap-1 px-[10px] rounded-full"> 
+        <span>
+          <img
+            src="./images/icons/CaretDoubleUp.svg"
+            alt="featured"
+            width="20" loading="lazy"
+            height="20"
+          />
+        </span>
+        <span class="text-white text-sm font-medium">
+          Upcoming
+          </span>
+      </div>
+      <img
+        src="./images/slider/other.png"
+        alt="featured1" loading="lazy"
+        class="w-full h-[270px] object-cover rounded-t-2xl "
+      />
+      <h2 class="text-2xl md:text-[32px] font-semibold mt-4">Malahaxmi Nagar-42</h2>
+      <p class="text-sm text-gray-600">
+        The layout is NIT / IMMRDA sanctioned with RL Bank Finance is
+        available.
+      </p>
+      <p class="text-sm text-gray-600 inline-flex gap-1">
+        <span
+          ><img
+            src="./images/icons/MapPin.svg"
+            width="24"
+            height="24" loading="lazy"
+            alt="mappin"
+        /></span>
+        <span> Kotewada, Nagpur</span>
+      </p>
+    </div>
+     <!--layer 3-->
+     <div class="bg-white flex flex-col gap-6 relative">
+      <div class="absolute top-4 right-4 z-20 bg-natural-dark py-[5px] flex justify-between items-center gap-1 px-[10px] rounded-full"> 
+        <span>
+          <img
+            src="./images/icons/CheckCircle.svg"
+            alt="featured"
+            width="20" loading="lazy"
+            height="20"
+          />
+        </span>
+        <span class="text-white text-sm font-medium">
+          Completed
+          </span>
+      </div>
+      <img
+        src="./images/slider/mahalaxmi.png"
+        alt="mahalaxmi" loading="lazy" width="421" height="270"
+        class="w-full h-[270px] object-cover rounded-2xl  "
+      />
+      <h2 class="text-2xl md:text-[32px] font-semibold mt-4">Malahaxmi Nagar-35</h2>
+      <p class="text-sm text-gray-600">
+        The layout is NIT / IMMRDA sanctioned with RL Bank Finance is
+        available.
+      </p>
+      <p class="text-sm text-gray-600 inline-flex gap-1">
+        <span
+          ><img
+            src="./images/icons/MapPin.svg"
+            width="24" loading="lazy"
+            height="24"
+            alt="mappin"
+        /></span>
+        <span> Kotewada, Nagpur</span>
+      </p>
+    </div>
+    <div class="bg-white flex flex-col gap-6 relative">
+      <div class="absolute top-4 right-4 z-20 bg-natural-dark py-[5px] flex justify-between items-center gap-1 px-[10px] rounded-full"> 
+        <span>
+          <img
+            src="./images/icons/RocketLaunch.svg"
+            alt="featured"
+            width="20" loading="lazy"
+            height="20"
+          />
+        </span>
+        <span class="text-white text-sm font-medium">
+          Ongoing
+          </span>
+      </div>
+      <img
+        src="./images/slider/Prop_3.png"
+        alt="featured1" loading="lazy" width="421" height="270"
+        class="w-full h-[270px] object-cover rounded-2xl  "
+      />
+      <h2 class="text-2xl md:text-[32px] font-semibold mt-4">Malahaxmi Nagar-40</h2>
+      <p class="text-sm text-gray-600">
+        The layout is NIT / IMMRDA sanctioned with RL Bank Finance is
+        available.
+      </p>
+      <p class="text-sm text-gray-600 inline-flex gap-1">
+        <span
+          ><img
+            src="./images/icons/MapPin.svg"
+            width="24" loading="lazy"
+            height="24"
+            alt="mappin"
+        /></span>
+        <span> Kotewada, Nagpur</span>
+      </p>
+    </div>
+    <div class="bg-white flex flex-col gap-6 relative">
+      <div class="absolute top-4 right-4 z-20 bg-natural-dark py-[5px] flex justify-between items-center gap-1 px-[10px] rounded-full"> 
+        <span>
+          <img
+            src="./images/icons/CaretDoubleUp.svg"
+            alt="featured"
+            width="20" loading="lazy"
+            height="20"
+          />
+        </span>
+        <span class="text-white text-sm font-medium">
+          Upcoming
+          </span>
+      </div>
+      <img
+        src="./images/slider/Prop_5.png"
+        alt="featured1" loading="lazy"
+        class="w-full h-[270px] object-cover rounded-t-2xl "
+      />
+      <h2 class="text-2xl md:text-[32px] font-semibold mt-4">Malahaxmi Nagar-42</h2>
+      <p class="text-sm text-gray-600">
+        The layout is NIT / IMMRDA sanctioned with RL Bank Finance is
+        available.
+      </p>
+      <p class="text-sm text-gray-600 inline-flex gap-1">
+        <span
+          ><img
+            src="./images/icons/MapPin.svg"
+            width="24"
+            height="24" loading="lazy"
+            alt="mappin"
+        /></span>
+        <span> Kotewada, Nagpur</span>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+    </section>
+ 
+
+
+<!-- Real Estate Market-->
+<section class="bg-Luminous pt-36 pb-0 overflow-hidden">
+  <div
+    class="max-w-screen-3xl   flex gap-8 flex-col px-3 md:px-(--space) mx-auto py-6 pb-0"
+  >
+  
+  <div class="relative">
+  
+<div class="w-full  lg:w-3/5 gap-3 absolute  inset-0 top-0 md:top-[60px] lg:top-[110px]
+mx-auto flex  flex-col justify-center items-center text-center">
+
+
+<h2 class=" text-2xl  font-normal md:text-3xl lg:text-56  md:leading-16">Crafting <span class="font-redaction intersect:motion-opacity-in-0 intersect:motion-translate-y-in-100 intersect:motion-duration-[2s] intersect:motion-blur-in-md">  Luxurious </span> Living Spaces in Nagpur’s Premier <span class="font-redaction intersect:motion-opacity-in-0 intersect:motion-translate-y-in-100 intersect:motion-duration-[2s] intersect:motion-blur-in-md">  Real Estate </span> Market</h2>
+<button type="button" class="bg-iravi-dark w-auto text-base flex items-center font-normal gap-2 px-4 py-2 rounded-full mt-3 cursor-pointer">
+  <span>Get in Touch</span>
+</button>
+
+</div>
+  
+  </div>
+<div class="mt-4 md:mt-16">
+<img src="./images/Crafting.png" width="" height="652" alt="Crafting Luxurious Living Spaces in Nagpur’s Premier Real Estate Market" class="w-full
+intersect:animate-fade-up intersect:animate-duration-500 intersect:animate-delay-100 intersect:animate-ease-linear intersect:nimate-normal intersect:animate-fill-both" loading="lazy"/>
+
+</div>
+  </div>
+  </section>
+
+ <!--Estate Market end-->
+
+ <!--footer-->
+ <footer class="bg-natural-dark  pt-12 md:pt-[120px] pb-10 md:pb-16">
+  <div
+  class="max-w-screen-3xl px-3 md:px-(--space) mx-auto "
+>
+<div class=" flex gap-8 md:flex-row flex-col">
+<div class="w-1/2">
+<div class="relative">
+      
+<img
+  src="./images/MAhalaxmi-Infra-LOGO.png"
+  alt="MAhalaxmi-Infra"
+  class="w-32 h-full"
+/>
+<a href="index.html" class="absolute top-0 start-0 end-0 bottom-0" > </a>
+</div>
+</div>
+<div class="w-full md:w-1/2 flex gap-24 flex-col ">
+<div class="flex gap-8 justify-start flex-col">
+<div class="text-sm font-medium text-natural-green uppercase flex items-center gap-1">
+  <span class="w-2.5 h-2.5 bg-natural-green block pe-2"></span>
+  <span class="block motion-preset-typewriter uppercase motion-duration-75"> quick links</span>
+  </span>
+</div>
+
+<div class="flex md:justify-between gap-3 justify-start md:items-center flex-row md:flex-row ">
+  <div class="w-full">
+     <ul>
+      <li class="text-white text-2xl font-medium"> <a href="About.html">About</a></li>
+      <li class="text-white text-2xl font-medium"> <a href="Projects.html">Projects</a></li>
+      <li class="text-white text-2xl font-medium"> <a href="Projects.html">Events</a></li>
+    </ul>
+  </div>
+  <div class="w-full">
+    <ul>
+      <li class="text-white text-2xl font-medium"> <a href="Blogs.html">Blogs</a></li>
+      <li class="text-white text-2xl font-medium"> <a href="Careers.html">Careers</a></li>
+      <li class="text-white text-2xl font-medium"> <a href="Contact.html">Contact</a></li>
+    </ul>
+    <ul>
+     
+    
+    
+ </div>
+</div>
+</div>
+
+
+<div class="flex gap-8 justify-start flex-col">
+
+<div class="flex md:justify-between gap-3 justify-start md:items-start flex-col lg:flex-row ">
+  <div class="w-full flex flex-col gap-8">
+    <div class="text-sm font-medium text-natural-green uppercase flex items-center gap-1">
+      <span class="w-2.5 h-2.5 bg-natural-green block pe-2"></span>
+      <span class="block motion-preset-typewriter uppercase motion-duration-75"> Contact US</span>
+      </span>
+    </div>
+
+     <ul>
+      <li class="text-white text-base font-medium"> <a class="underline" href="mainto:info@mahalaxmi.com ">info@mahalaxmi.com</a></li>
+      <li class="text-white text-base font-medium"> <a href="tel:0821018292">0821018292</a></li>
+    </ul>
+  </div>
+  <div class="w-full">
+    <h3 class="font-redaction text-[32px] text-white intersect:motion-opacity-in-0 intersect:motion-translate-y-in-100 intersect:motion-duration-[2s] intersect:motion-blur-in-md">Stay up to date</h3>
+    
+    <div>
+
+      <div class="flex flex-col md:flex-row gap-8 mt-4 w-full" > 
+<input type="email"  placeholder="Enter address" 
+class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600   text-semi-dark text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full" />
+<div class="">
+<button type="button" class="bg-iravi-dark w-auto text-base flex items-center font-normal  px-4 py-2 rounded-full cursor-pointer">
+<span>Submit</span>
+</button>
+</div>
+      </div>
+     
+       
+    </div>
+ </div>
+</div>
+</div>
+
+
+</div>
+
+</div>
+
+
+<div class="flex justify-between gap-4 mt-10 md:mt-32">
+
+<div class="flex gap-8 flex-row">
+
+<a href="#" class="text-white text-2xl"><img src="./images/Footer/youtube.svg" alt="youtube" width="22" height="16" loading="lazy"/></a>
+<a href="#" class="text-white text-2xl"><img src="./images/Footer/instagram.svg" alt="instagram" width="22" height="16" loading="lazy"/></a>
+<a href="#" class="text-white text-2xl"><img src="./images/Footer/facebook.svg" alt="facebook" width="22" height="16" loading="lazy"/></a>
+
+</div>
+<div>
+
+<span class="text-xs text-semi-dark/50">&copy; 2025 — Copyright
+</span>
+</div>
+</div>
+  </div>
+</footer>
+    
+  </body>
+</html>

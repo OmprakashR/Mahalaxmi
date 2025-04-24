@@ -52,7 +52,7 @@
     <section>
         <div class="max-w-screen-3xl px-3 md:px-(--space) mx-auto py-6  flex flex-col gap-16">
             <div>
-                <h1 class="text-90 text-center leading-24">
+                <h1 class="md:text-90 text-5xl text-center md:leading-24">
                     Contact
                     <span
                         class="font-redaction intersect:motion-opacity-in-0 intersect:motion-translate-y-in-100 intersect:motion-duration-[2s] intersect:motion-blur-in-md">
@@ -128,14 +128,157 @@
 
 
     <!--  crafting -->
-    <section class=" mt-9  pb-10 md:pb-10 lg:pt-[72px] lg:pb-36 border-t border-slate-200">
+    <section class=" mt-9  pb-10 md:pb-10 lg:pt-[120px] lg:pb-36 border-t border-slate-200">
         <div class="max-w-screen-3xl mx-auto px-3 md:px-(--space) ">
-            <div>
+
+            <div class="flex flex-col md:flex-row gap-8">
+                <div class="w-full md:w-1/2">
+                    <div class="w-full rounded-20 overflow-hidden">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14937.244373384048!2d79.06206589379491!3d21.13681769568625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1745516113607!5m2!1sen!2sin"
+                            width="600" height="432" style="border:0;" allowfullscreen="" loading="lazy"
+                            class="w-full h-[250px]  md:h-[423px]" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+                <div class="w-full md:w-1/2 flex flex-col gap-10">
+                    <div>
+                        <h3 class="text-[32px]">Get in Touch</h3>
+                    </div>
+                    <div>
+
+                        <form>
+                            <div class="flex flex-row flex-wrap gap-y-10">
+                                <div class="w-full md:w-1/2 p-0 md:pr-4">
+
+                                    <input type="text" placeholder="First Name"
+                                        class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600  text-natural-dark  text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full" />
+                                </div>
+                                <div class="w-full md:w-1/2 p-0 md:pl-4">
+
+                                    <input type="text" placeholder="Last Name"
+                                        class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full" />
+                                </div>
+                                <div class="w-full md:w-1/2 p-0 md:pr-4">
+                                    <input type="email" placeholder="Email Address"
+                                        class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full" />
+                                </div>
+                                <div class="w-full md:w-1/2 p-0 md:pl-4">
+
+                                    <input type="email" placeholder="Phone Number"
+                                        class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full" />
+                                </div>
+                                <div class="w-full ">
+
+                                    <textarea type="email" placeholder="Message"
+                                        class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full"
+                                        rows="7"></textarea>
+                                </div>
+                            </div>
+                            <button type="button"
+                                class="bg-iravi-dark w-auto text-base flex items-center font-normal gap-2 px-4 py-2 rounded-full mt-3 cursor-pointer">
+                                <span>Submit</span>
+                                <span> <img src="images/icons/right_arrow.svg" alt="arrow" width="16" height="16"
+                                        loading="lazy" />
+                                </span></button>
+
+                        </form>
+                    </div>
+
+
+                </div>
             </div>
-            <div>
+
+
+        </div>
+    </section>
+    <section class=" mt-9  pb-10 md:pb-10  lg:pb-36  ">
+        <div class="max-w-screen-3xl mx-auto px-3 md:px-(--space) ">
+
+            <h3 class="text-56 text-4xl">Frequently Asked <span
+                    class="font-redaction intersect:motion-opacity-in-0 intersect:motion-translate-y-in-100 intersect:motion-duration-[2s] intersect:motion-blur-in-md">Questions</span>
+            </h3>
+            <p class="text-base font-normal text-[20px] mt-3">Find answers to common questions.</p>
+            <div class="mt-20">
+                <div class="space-y-4" id="accordion">
+
+                    <!-- Accordion Item -->
+                    <div class="accordion-item    shadow overflow-hidden">
+                        <button
+                            class="accordion-header w-full flex justify-between items-center px-4 py-3 text-left text-lg font-medium bg-white transition hover:bg-gray-50">
+                            <span class="text-[20px]">What is Mahalaxmi Group known for?</span>
+                            <svg class="w-5 h-5 transition-transform duration-300 transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content px-4 pb-4 hidden">
+                            <p class="text-gray-600 text-[20px]">
+                                Mahalaxmi Group is known for our "Tradition of Trust" in delivering the highest quality
+                                residential and commercial
+                                property projects according to the rules and regulations of authorities like NMRDA/RL.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Accordion Item -->
+                    <div class="accordion-item    shadow overflow-hidden">
+                        <button
+                            class="accordion-header w-full flex justify-between items-center px-4 py-3 text-left text-lg font-medium bg-white transition hover:bg-gray-50">
+                            <span class="text-[20px]">How many projects has Mahalaxmi Group completed?</span>
+                            <svg class="w-5 h-5 transition-transform duration-300 transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content px-4 pb-4 hidden">
+                            <p class="text-gray-600 text-[20px]">
+                                This is the content for accordion 2.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Accordion Item -->
+                    <div class="accordion-item     shadow overflow-hidden">
+                        <button
+                            class="accordion-header w-full flex justify-between items-center px-4 py-3 text-left text-lg font-medium bg-white transition hover:bg-gray-50">
+                            <span class="text-[20px]">What is the handover process for properties purchased from
+                                Mahalaxmi Group?</span>
+                            <svg class="w-5 h-5 transition-transform duration-300 transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content px-4 pb-4 hidden">
+                            <p class="text-gray-600 text-[20px]">
+                                This is the content for accordion 2.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Accordion Item -->
+                    <div class="accordion-item   shadow overflow-hidden">
+                        <button
+                            class="accordion-header w-full flex justify-between items-center px-4 py-3 text-left text-lg font-medium bg-white transition hover:bg-gray-50">
+                            <span class="text-[20px]">Can Mahalaxmi Group be trusted with my real estate
+                                investment?</span>
+                            <svg class="w-5 h-5 transition-transform duration-300 transform" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </button>
+                        <div class="accordion-content px-4 pb-4 hidden">
+                            <p class="text-gray-600 text-[20px]">
+                                This is the content for accordion 2.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+
     <!-- Real Estate Market-->
     <section class="bg-Luminous pt-36 pb-0 overflow-hidden">
         <div class="max-w-screen-3xl   flex gap-8 flex-col px-3 md:px-(--space) mx-auto py-6 pb-0">
@@ -281,7 +424,31 @@ intersect:animate-fade-up intersect:animate-duration-500 intersect:animate-delay
             </div>
         </div>
     </footer>
+    <script>
+        const accordionItems = document.querySelectorAll(".accordion-item");
 
+        accordionItems.forEach(item => {
+            const header = item.querySelector(".accordion-header");
+
+            header.addEventListener("click", () => {
+                // Close all items
+                accordionItems.forEach(i => {
+                    const content = i.querySelector(".accordion-content");
+                    const icon = i.querySelector("svg");
+                    content.classList.add("hidden");
+                    icon.classList.remove("rotate-180");
+                });
+
+                // Toggle current item
+                const content = item.querySelector(".accordion-content");
+                const icon = item.querySelector("svg");
+                if (content.classList.contains("hidden")) {
+                    content.classList.remove("hidden");
+                    icon.classList.add("rotate-180");
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

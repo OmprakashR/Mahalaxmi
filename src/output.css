@@ -335,6 +335,9 @@
   .h-\[78px\] {
     height: 78px;
   }
+  .h-\[250px\] {
+    height: 250px;
+  }
   .h-\[270px\] {
     height: 270px;
   }
@@ -1140,6 +1143,11 @@
   .md\:h-\[478px\] {
     @media (width >= 48rem) {
       height: 478px;
+    }
+  }
+  .md\:h-\[600px\] {
+    @media (width >= 48rem) {
+      height: 600px;
     }
   }
   .md\:max-h-\[90vh\] {

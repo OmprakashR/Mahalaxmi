@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="src/lightbox/css/glightbox.min.css">
+    <script src="src/lightbox/js/glightbox.min.js"></script>
+</head>
+
+<body class="bg-white p-6">
+
+    <div class="max-w-6xl mx-auto">
+        <div class="flex justify-between items-center mb-4">
+            <h2 class="text-3xl font-semibold">Building <em class="italic">Community</em> Together</h2>
+            <a href="#" class="text-sm text-gray-700 underline">View All Events →</a>
+        </div>
+
+        <div class="relative slider-container overflow-x-auto">
+            <!-- Slider Container -->
+            <div class="slider flex  gap-6 scroll-smooth snap-x">
+                <!-- Slides -->
+                <div class="shrink-0 snap-start w-full md:w-1/2">
+                    <a href="images/Highlight.png" class="glightbox2">
+                        <img src="images/Highlight.png" alt="image" />
+                    </a>
+                </div>
+                <div class="shrink-0 snap-start w-full md:w-1/2">
+                    <a href="images/Highlight.png" class="glightbox2">
+                        <img src="images/Highlight.png" alt="image" />
+                    </a>
+                </div>
+                <div class="shrink-0 snap-start w-full md:w-1/2">
+                    <a href="images/Highlight.png" class="glightbox3">
+                        <img src="images/Highlight.png" alt="image" />
+                    </a>
+                </div>
+                <div class="shrink-0 snap-start w-full md:w-1/2">
+                    <a href="images/Highlight.png" class="glightbox3">
+                        <img src="images/Highlight.png" alt="image" />
+                    </a>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="relative h-2 bg-gray-200 rounded-full mt-4">
+                <div class="progress-bar absolute h-2 bg-blue-500 transition-all rounded-full" style="width: 0%;"></div>
+            </div>
+
+            <!-- Navigation -->
+            <div class="flex justify-between items-center mt-4">
+                <button class="prev-slide text-2xl px-4 py-2 rounded hover:bg-gray-200">←</button>
+                <div class="slide-count text-sm text-gray-600">01 / 03</div>
+                <button class="next-slide text-2xl px-4 py-2 rounded hover:bg-gray-200">→</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll('.slider-container').forEach(container => {
+            const slider = container.querySelector('.slider');
+            const countDisplay = container.querySelector('.slide-count');
+            const progressBar = container.querySelector('.progress-bar');
+            const slides = slider.querySelectorAll('div');
+            const prevButton = container.querySelector('.prev-slide');
+            const nextButton = container.querySelector('.next-slide');
+            let currentIndex = 0;
+
+            function updateCount() {
+                const total = slides.length;
+                countDisplay.textContent = `${String(currentIndex + 1).padStart(2, '0')} / ${String(total).padStart(2, '0')}`;
+            }
+
+            function updateProgressBar() {
+                const total = slides.length;
+                const progress = ((currentIndex + 1) / total) * 100;
+                progressBar.style.width = `${progress}%`;
+            }
+
+            function scrollSlide(direction) {
+                const slideWidth = slides[0].offsetWidth + 24; // 24 is approx gap
+                currentIndex = Math.max(0, Math.min(currentIndex + direction, slides.length - 1));
+                slider.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
+                slider.style.transition = 'transform 0.5s ease-in-out';
+                updateCount();
+                updateProgressBar();
+            }
+
+            function resetSliderToStart() {
+                currentIndex = 0;
+                slider.style.transform = `translateX(0px)`;
+                slider.style.transition = 'transform 0.5s ease-in-out';
+                updateCount();
+                updateProgressBar();
+            }
+
+            // Event listeners
+            prevButton.addEventListener('click', () => scrollSlide(-1));
+            nextButton.addEventListener('click', () => {
+                if (currentIndex === slides.length - 1) {
+                    resetSliderToStart();
+                } else {
+                    scrollSlide(1);
+                }
+            });
+
+            // Initial update
+            updateCount();
+            updateProgressBar();
+        });
+
+        const lightbox = GLightbox({
+            alertLoading: false,
+            loop: true,
+            touchNavigation: true,
+            openEffect: 'zoom',
+            closeEffect: 'zoom',
+            selector: '.glightbox2,.glightbox3',
+            zoomable: true,
+        });
+    </script>
+
+</body>
+
+</html>

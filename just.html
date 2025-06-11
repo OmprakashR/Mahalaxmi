@@ -81,30 +81,33 @@
 
             function scrollSlide(direction) {
                 const slideWidth = slides[0].offsetWidth + 24; // 24 is approx gap
-                currentIndex = Math.max(0, Math.min(currentIndex + direction, slides.length - 1));
+                const newIndex = currentIndex + direction;
+
+                if (newIndex < 0) {
+                    currentIndex = slides.length - 1; // Loop back to the last slide
+                } else if (newIndex >= slides.length) {
+                    currentIndex = 0; // Loop back to the first slide
+                } else {
+                    currentIndex = newIndex;
+                }
+
                 slider.style.transform = `translateX(-${slideWidth * currentIndex}px)`;
                 slider.style.transition = 'transform 0.5s ease-in-out';
                 updateCount();
                 updateProgressBar();
             }
 
-            function resetSliderToStart() {
-                currentIndex = 0;
-                slider.style.transform = `translateX(0px)`;
-                slider.style.transition = 'transform 0.5s ease-in-out';
-                updateCount();
-                updateProgressBar();
+            function appendFirstSlide() {
+                const firstSlide = slides[0].cloneNode(true);
+                slider.appendChild(firstSlide);
             }
+
+            // Append the first slide after the last slide
+            appendFirstSlide();
 
             // Event listeners
             prevButton.addEventListener('click', () => scrollSlide(-1));
-            nextButton.addEventListener('click', () => {
-                if (currentIndex === slides.length - 1) {
-                    resetSliderToStart();
-                } else {
-                    scrollSlide(1);
-                }
-            });
+            nextButton.addEventListener('click', () => scrollSlide(1));
 
             // Initial update
             updateCount();

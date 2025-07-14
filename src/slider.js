@@ -86,7 +86,7 @@
             updateProgressBar();
         });
 
-    // menu functionality add dynamically
+    // menu functionality add dynamically updated chnages 
 
       document.addEventListener('DOMContentLoaded', () => {
       const mobileMenuButton = document.getElementById('mobile-menu-button');

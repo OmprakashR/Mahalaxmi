@@ -17,6 +17,7 @@
   <link rel="stylesheet" href="font-css.css" />
   <link href="./src/output.css" rel="stylesheet" />
   <script defer src="https://unpkg.com/tailwindcss-intersect@2.x.x/dist/observer.min.js"></script>
+  <!-- Add Swiper.js CSS -->
 </head>
 
 <body class="bg-[#ffff0] text-natural-dark">
@@ -26,6 +27,7 @@
       <div class="relative">
 
         <img src="./images/MAhalaxmi-Infra-LOGO.png" alt="MAhalaxmi-Infra" class="w-32 h-full" />
+
         <a href="index.html" class="absolute top-0 start-0 end-0 bottom-0"> </a>
       </div>
       <!-- Desktop Menu -->
@@ -81,10 +83,26 @@
   <!--hero section-->
   <section>
     <div class="max-w-screen-3xl px-3 md:px-(--space) mx-auto py-6 rounded-20">
-      <picture>
-        <img src="./images/homeBanner.png" alt="hero" loading="lazy"
-          class="w-full  h-auto md:object-fill object-center min-h-[30vh] max-h-[30vh] md:max-h-[90vh] lg:h-[640px] rounded-3xl" />
-      </picture>
+      <!-- Swiper Container -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <!-- Slide 1 -->
+          <div class="swiper-slide">
+            <img src="./images/homeBanner.png" alt="hero" loading="lazy"
+              class="w-full h-auto md:object-fill object-center min-h-[30vh] max-h-[30vh] md:max-h-[90vh] lg:h-[640px] rounded-3xl" />
+          </div>
+          <!-- Add more slides as needed -->
+          <div class="swiper-slide">
+            <img src="./images/Highlight.png" alt="hero2" loading="lazy"
+              class="w-full h-auto md:object-fill object-center min-h-[30vh] max-h-[30vh] md:max-h-[90vh] lg:h-[640px] rounded-3xl" />
+          </div>
+        </div>
+        <!-- Swiper Navigation -->
+        <div class="swiper-button-next sepia hover:saturate-200"></div>
+        <div class="swiper-button-prev sepia hover:saturate-200"></div>
+        <!-- Swiper Pagination -->
+        <div class="swiper-pagination sepia "></div>
+      </div>
     </div>
   </section>
   <!--hero section end-->
@@ -1149,6 +1167,27 @@ intersect:animate-fade-up intersect:animate-duration-500 intersect:animate-delay
   </footer>
   <script src="src/slider.js"></script>
   <script src="src/single-slider.js"></script>
+  <!-- Add Swiper.js Script -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+    });
+  </script>
 
   <style>
     .carousel-slide {

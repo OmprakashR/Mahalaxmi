@@ -22,7 +22,7 @@
 
 <body class="bg-[#ffff0] text-natural-dark">
   <!--header section-->
-<header id="main-header" class="bg-transparent p-2 md:block sticky top-0 z-50 transition-all duration-500">
+<header id="main-header" class="bg-transparent p-2 md:block fixed top-0 z-50 transition-all duration-500">
     <nav class="flex justify-between items-center max-w-screen-3xl px-3 md:px-(--space) mx-auto">
       <div class="relative" >
 
@@ -1206,23 +1206,33 @@ intersect:animate-fade-up intersect:animate-duration-500 intersect:animate-delay
     }
   </style>
 <script>
- let lastScrollTop = 0;
-    const header = document.getElementById('main-header');
+  const header = document.getElementById('main-header');
+    const menuLinks = document.querySelectorAll('.menu-link');
 
     window.addEventListener('scroll', function () {
       const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
       if (scrollTop > 50) {
-        // Add background + shadow when scrolling down
+        // Add background + shadow
         header.classList.add('bg-iravi', 'shadow-md');
         header.classList.remove('bg-transparent');
+
+        // Change menu link color to dark (black)
+        menuLinks.forEach(link => {
+          link.classList.remove('text-white');
+          link.classList.add('text-black');
+        });
       } else {
-        // Make it transparent again when near top
+        // Make header transparent again
         header.classList.remove('bg-iravi', 'shadow-md');
         header.classList.add('bg-transparent');
-      }
 
-      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+        // Change menu link color back to white
+        menuLinks.forEach(link => {
+          link.classList.remove('text-black');
+          link.classList.add('text-white');
+        });
+      }
     });
 </script>
 

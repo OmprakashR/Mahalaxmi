@@ -22,7 +22,7 @@
 
 <body class="bg-[#ffff0] text-natural-dark">
   <!--header section-->
-  <header class="bg-iravi p-2 md:block   sticky top-0 z-50">
+<header id="main-header" class="bg-transparent p-2 md:block sticky top-0 z-50 transition-all duration-500">
     <nav class="flex justify-between items-center max-w-screen-3xl px-3 md:px-(--space) mx-auto">
       <div class="relative" >
 
@@ -1205,6 +1205,26 @@ intersect:animate-fade-up intersect:animate-duration-500 intersect:animate-delay
       transition: width 0.5s;
     }
   </style>
+<script>
+ let lastScrollTop = 0;
+    const header = document.getElementById('main-header');
+
+    window.addEventListener('scroll', function () {
+      const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+      if (scrollTop > 50) {
+        // Add background + shadow when scrolling down
+        header.classList.add('bg-iravi', 'shadow-md');
+        header.classList.remove('bg-transparent');
+      } else {
+        // Make it transparent again when near top
+        header.classList.remove('bg-iravi', 'shadow-md');
+        header.classList.add('bg-transparent');
+      }
+
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+</script>
 
 </body>
 

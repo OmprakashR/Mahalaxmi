@@ -449,6 +449,12 @@
   .w-32 {
     width: calc(var(--spacing) * 32);
   }
+  .w-\[40\%\] {
+    width: 40%;
+  }
+  .w-\[45\%\] {
+    width: 45%;
+  }
   .w-\[56px\] {
     width: 56px;
   }
@@ -1478,6 +1484,11 @@
   .md\:w-\[636ox\] {
     @media (width >= 48rem) {
       width: 636ox;
+    }
+  }
+  .md\:w-full {
+    @media (width >= 48rem) {
+      width: 100%;
     }
   }
   .md\:grid-cols-2 {

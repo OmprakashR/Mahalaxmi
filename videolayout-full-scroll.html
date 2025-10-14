@@ -20,30 +20,28 @@
   <!-- Add Swiper.js CSS -->
 </head>
 
-<body class="bg-[#ffff0] text-natural-dark group">
+<body class="bg-[#ffff0] text-natural-dark  ">
   <!--header section-->
-<header id="main-header" class="bg-transparent group-hover:bg-iravi  p-2 md:block w-full fixed top-0 z-50 transition-all duration-500 ease-in-out
-">
+<div class="group">
+  <header class="bg-transparent group-hover:bg-iravi p-2 fixed top-0 w-full z-50 transition-all duration-500 ease-in-out">
     <nav class="flex justify-between items-center max-w-screen-3xl px-3 md:px-(--space) mx-auto">
-      <div class="relative" >
-
-        <img src="./images/MAhalaxmi-Infra-LOGO.png" alt="MAhalaxmi-Infra" class="w-32 h-full" />
-
-        <a href="index.html" class="absolute top-0 start-0 end-0 bottom-0"> </a>
+      <div class="relative">
+        <img src="./images/MAhalaxmi-Infra-LOGO.png" alt="Mahalaxmi Infra" class="w-32 h-full" />
+        <a href="index.html" class="absolute inset-0"></a>
       </div>
-      <!-- Desktop Menu -->
-      <div class="hidden md:block">
-        <menu>
-          <ul class="flex gap-8">
-            <li><a href="about.html" class="text-sm text-white uppercase menu-link group-hover:text-black ">About</a></li>
-            <li><a href="project.html" class="text-sm text-white uppercase menu-link group-hover:text-black">Project</a></li>
-            <li><a href="event.html" class="text-sm text-white uppercase menu-link group-hover:text-black">Events</a></li>
-            <li><a href="blogs.html" class="text-sm text-white uppercase menu-link group-hover:text-black">Blogs</a></li>
-            <li><a href="career.html" class="text-sm text-white uppercase menu-link group-hover:text-black">Career</a></li>
-            <li><a href="contact.html" class="text-sm text-white uppercase menu-link group-hover:text-black">Contact</a></li>
-          </ul>
-        </menu>
-      </div>
+
+      <!-- Menu -->
+      <ul class="hidden md:flex gap-8">
+        <li><a href="about.html" class="text-sm text-white uppercase group-hover:text-black transition">About</a></li>
+        <li><a href="project.html" class="text-sm text-white uppercase group-hover:text-black transition">Project</a></li>
+        <li><a href="event.html" class="text-sm text-white uppercase group-hover:text-black transition">Events</a></li>
+        <li><a href="blogs.html" class="text-sm text-white uppercase group-hover:text-black transition">Blogs</a></li>
+        <li><a href="career.html" class="text-sm text-white uppercase group-hover:text-black transition">Career</a></li>
+        <li><a href="contact.html" class="text-sm text-white uppercase group-hover:text-black transition">Contact</a></li>
+      </ul>
+    </nav>
+ 
+
       <!-- Mobile Menu -->
 
       <button type="button"
@@ -79,7 +77,8 @@
         </div>
       </div>
     </nav>
-  </header>
+ </header>
+</div>
   <!--header section end-->
   <!--hero section-->
   <section>

@@ -556,7 +556,7 @@
       </div>
 
 
-      <section class=" h-[200px] md:h-[540px] w-full relative   mx-auto ">
+      <section class=" h-auto md:h-[540px] w-full relative   mx-auto ">
 
         <div class="h-full">
           <div class="swiper mySwiper">
@@ -677,53 +677,69 @@
   </section>
 
   <!--contact us-->
+  <section id="getintouch" class=" mt-9  pb-10 md:pb-10 lg:pt-[120px] lg:pb-36 border-t border-slate-200">
+    <div class="max-w-screen-3xl mx-auto px-3 md:px-(--space) ">
 
-  <section id="getintouch">
-    <div class="container mx-auto px-3 md:px-(--space) py-16 md:py-36">
-      <div>
-        <div class="text-4xl md:text-56 leading-14 md:leading-16 mb-8">
-          <span
-            class="font-redaction intersect:motion-opacity-in-0 intersect:motion-translate-y-in-100 intersect:motion-duration-[2s] intersect:motion-blur-in-md">Contact
-            Us</span>
-        </div>
-        <form>
-          <div class="flex flex-row flex-wrap gap-y-10">
-            <div class="w-full md:w-1/2 p-0 md:pr-4">
-
-              <input type="text" placeholder="First Name"
-                class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600  text-natural-dark  text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full">
-            </div>
-            <div class="w-full md:w-1/2 p-0 md:pl-4">
-
-              <input type="text" placeholder="Last Name"
-                class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full">
-            </div>
-            <div class="w-full md:w-1/2 p-0 md:pr-4">
-              <input type="email" placeholder="Email Address"
-                class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full">
-            </div>
-            <div class="w-full md:w-1/2 p-0 md:pl-4">
-
-              <input type="number" placeholder="Phone Number"
-                class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full">
-            </div>
-            <div class="w-full ">
-
-              <textarea type="text" placeholder="Message"
-                class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full"
-                rows="3"></textarea>
-            </div>
+      <div class="flex flex-col md:flex-row gap-8">
+        <div class="w-full md:w-1/2">
+          <div class="w-full rounded-20 overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14937.244373384048!2d79.06206589379491!3d21.13681769568625!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1745516113607!5m2!1sen!2sin"
+              width="600" height="432" style="border:0;" allowfullscreen="" loading="lazy"
+              class="w-full h-[250px]  md:h-[423px]" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
-          <button type="button"
-            class="bg-iravi-dark w-auto text-base flex items-center font-normal gap-2 px-4 py-2 rounded-full mt-3 cursor-pointer">
-            <span>Submit</span>
-            <span> <img src="images/icons/right_arrow.svg" alt="arrow" width="16" height="16" loading="lazy">
-            </span></button>
+        </div>
+        <div class="w-full md:w-1/2 flex flex-col gap-10">
+          <div>
+            <h3 class="text-[32px]">Get in Touch</h3>
+          </div>
+          <div>
 
-        </form>
+            <form>
+              <div class="flex flex-row flex-wrap gap-y-10">
+                <div class="w-full md:w-1/2 p-0 md:pr-4">
+
+                  <input type="text" placeholder="First Name"
+                    class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600  text-natural-dark  text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full" />
+                </div>
+                <div class="w-full md:w-1/2 p-0 md:pl-4">
+
+                  <input type="text" placeholder="Last Name"
+                    class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full" />
+                </div>
+                <div class="w-full md:w-1/2 p-0 md:pr-4">
+                  <input type="email" placeholder="Email Address"
+                    class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full" />
+                </div>
+                <div class="w-full md:w-1/2 p-0 md:pl-4">
+
+                  <input type="number" placeholder="Phone Number"
+                    class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full" />
+                </div>
+                <div class="w-full ">
+
+                  <textarea type="text" placeholder="Message"
+                    class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full"
+                    rows="7"></textarea>
+                </div>
+              </div>
+              <button type="button"
+                class="bg-iravi-dark w-auto text-base flex items-center font-normal gap-2 px-4 py-2 rounded-full mt-3 cursor-pointer">
+                <span>Submit</span>
+                <span> <img src="images/icons/right_arrow.svg" alt="arrow" width="16" height="16" loading="lazy" />
+                </span></button>
+
+            </form>
+          </div>
+
+
+        </div>
       </div>
+
+
     </div>
   </section>
+
   <!--contact us- end-->
   <!-- Our Highlight -->
   <section class="bg-natural-dark md:py-36 py-10">
@@ -923,7 +939,7 @@ intersect:animate-fade-up intersect:animate-duration-500 intersect:animate-delay
             <a href="index.html" class="absolute top-0 start-0 end-0 bottom-0"> </a>
           </div>
         </div>
-        <div class="w-full md:w-1/2 flex gap-24 flex-row justify-end">
+        <div class="w-full md:w-1/2 flex gap-6 md:gap-24  flex-col md:flex-row justify-end">
 
 
 
@@ -950,7 +966,7 @@ intersect:animate-fade-up intersect:animate-duration-500 intersect:animate-delay
           <div class="flex gap-8 justify-start flex-col">
             <div class="text-sm font-medium text-natural-green uppercase flex items-center gap-1">
               <span class="w-2.5 h-2.5 bg-natural-green block pe-2"></span>
-              <span class="block motion-preset-typewriter uppercase motion-duration-75"> Contact US</span>
+              <span class="block motion-preset-typewriter uppercase motion-duration-75"> Social</span>
               </span>
             </div>
             <div class="flex gap-8 flex-row ">
@@ -1017,16 +1033,15 @@ intersect:animate-fade-up intersect:animate-duration-500 intersect:animate-delay
     // });
 
 
-
     var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
+      slidesPerView: 1, // Default for mobile
       loop: false,
       autoplay: {
         delay: 5000,
         disableOnInteraction: false,
       },
       grid: {
-        rows: 2,
+        rows: 1,
       },
       navigation: {
         nextEl: '.swiper-button-next',
@@ -1036,6 +1051,20 @@ intersect:animate-fade-up intersect:animate-duration-500 intersect:animate-delay
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
+      },
+      breakpoints: {
+        768: { // For tablets
+          slidesPerView: 2,
+          grid: {
+            rows: 1,
+          },
+        },
+        1024: { // For desktops
+          slidesPerView: 3,
+          grid: {
+            rows: 2,
+          },
+        },
       },
     });
   </script>

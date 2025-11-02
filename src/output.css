@@ -7,6 +7,7 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
+    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-cyan-500: oklch(71.5% 0.143 215.221);
     --color-blue-500: oklch(62.3% 0.214 259.815);
     --color-indigo-600: oklch(51.1% 0.262 276.966);
@@ -334,9 +335,6 @@
   }
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
-  }
-  .mt-5 {
-    margin-top: calc(var(--spacing) * 5);
   }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
@@ -728,9 +726,6 @@
   .border-green-dark {
     border-color: var(--color-green-dark);
   }
-  .border-iravi-dark {
-    border-color: var(--color-iravi-dark);
-  }
   .border-natural-dark {
     border-color: var(--color-natural-dark);
   }
@@ -800,18 +795,6 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-white\/30 {
-    background-color: color-mix(in srgb, #fff 30%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 30%, transparent);
-    }
-  }
-  .bg-white\/50 {
-    background-color: color-mix(in srgb, #fff 50%, transparent);
-    @supports (color: color-mix(in lab, red, red)) {
-      background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
-    }
-  }
   .bg-white\/60 {
     background-color: color-mix(in srgb, #fff 60%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -834,29 +817,17 @@
     --tw-gradient-position: to bottom in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-  .bg-\[url\(\'\.\.\/\.\.\/HOMEPAGESLIDER4\.webp\'\)\] {
-    background-image: url('../../HOMEPAGESLIDER4.webp');
-  }
-  .bg-\[url\(\'\.\.\/HOMEPAGESLIDER4\.webp\'\)\] {
-    background-image: url('../HOMEPAGESLIDER4.webp');
+  .bg-\[url\(\'\.\.\/images\/ATTVA-CONTACT-FORM-2\.jpg\'\)\] {
+    background-image: url('../images/ATTVA-CONTACT-FORM-2.jpg');
   }
   .bg-\[url\(\'\.\.\/images\/HOMEPAGESLIDER4\.webp\'\)\] {
     background-image: url('../images/HOMEPAGESLIDER4.webp');
   }
-  .bg-\[url\(\'\.\.HOMEPAGESLIDER4\.webp\'\)\] {
-    background-image: url('..HOMEPAGESLIDER4.webp');
+  .bg-\[url\(\'\.\.\/images\/TATTVA-CONTACT-FORM-2\.jpg\'\)\] {
+    background-image: url('../images/TATTVA-CONTACT-FORM-2.jpg');
   }
-  .bg-\[url\(\'\.\/HOMEPAGESLIDER4\.webp\'\)\] {
-    background-image: url('./HOMEPAGESLIDER4.webp');
-  }
-  .bg-\[url\(\'\.\/images\/HOMEPAGESLIDER4\.webp\'\)\] {
-    background-image: url('./images/HOMEPAGESLIDER4.webp');
-  }
-  .bg-\[url\(\'\/images\/HOMEPAGESLIDER4\.webp\'\)\] {
-    background-image: url('/images/HOMEPAGESLIDER4.webp');
-  }
-  .bg-\[url\(\'HOMEPAGESLIDER4\.webp\'\)\] {
-    background-image: url('HOMEPAGESLIDER4.webp');
+  .bg-\[url\(\'https\:\/\/test\.mahalaxmidevelopers\.com\/frontend\/images\/tattva-apas\/TATTVA-CONTACT-FORM-1\.jpg\'\)\] {
+    background-image: url('https://test.mahalaxmidevelopers.com/frontend/images/tattva-apas/TATTVA-CONTACT-FORM-1.jpg');
   }
   .bg-\[url\(\.\.\/images\/pattern\.png\)\] {
     background-image: url(../images/pattern.png);
@@ -868,9 +839,6 @@
   .to-\[\#131B17\]\/90 {
     --tw-gradient-to: color-mix(in oklab, #131B17 90%, transparent);
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
-  }
-  .bg-contain {
-    background-size: contain;
   }
   .bg-cover {
     background-size: cover;
@@ -913,6 +881,9 @@
   }
   .p-10 {
     padding: calc(var(--spacing) * 10);
+  }
+  .p-12 {
+    padding: calc(var(--spacing) * 12);
   }
   .px-0 {
     padding-inline: calc(var(--spacing) * 0);
@@ -1018,9 +989,6 @@
   }
   .text-left {
     text-align: left;
-  }
-  .text-right {
-    text-align: right;
   }
   .text-start {
     text-align: start;
@@ -1140,6 +1108,9 @@
   }
   .text-natural-green {
     color: var(--color-natural-green);
+  }
+  .text-red-600 {
+    color: var(--color-red-600);
   }
   .text-semi-dark {
     color: var(--color-semi-dark);
@@ -1449,11 +1420,6 @@
       margin: calc(var(--spacing) * 0);
     }
   }
-  .md\:mt-0 {
-    @media (width >= 48rem) {
-      margin-top: calc(var(--spacing) * 0);
-    }
-  }
   .md\:mt-9 {
     @media (width >= 48rem) {
       margin-top: calc(var(--spacing) * 9);
@@ -1654,6 +1620,16 @@
       border-bottom-color: var(--color-semi-dark);
     }
   }
+  .md\:bg-white {
+    @media (width >= 48rem) {
+      background-color: var(--color-white);
+    }
+  }
+  .md\:bg-white\! {
+    @media (width >= 48rem) {
+      background-color: var(--color-white) !important;
+    }
+  }
   .md\:bg-none {
     @media (width >= 48rem) {
       background-image: none;
@@ -1664,11 +1640,6 @@
       object-fit: fill;
     }
   }
-  .md\:p-0 {
-    @media (width >= 48rem) {
-      padding: calc(var(--spacing) * 0);
-    }
-  }
   .md\:p-8 {
     @media (width >= 48rem) {
       padding: calc(var(--spacing) * 8);
@@ -1677,11 +1648,6 @@
   .md\:px-\(--space\) {
     @media (width >= 48rem) {
       padding-inline: var(--space);
-    }
-  }
-  .md\:px-0 {
-    @media (width >= 48rem) {
-      padding-inline: calc(var(--spacing) * 0);
     }
   }
   .md\:py-36 {
@@ -1815,6 +1781,11 @@
     @media (width >= 48rem) {
       --tw-leading: 68px;
       line-height: 68px;
+    }
+  }
+  .md\:text-natural-green {
+    @media (width >= 48rem) {
+      color: var(--color-natural-green);
     }
   }
   .lg\:top-\[110px\] {

@@ -116,7 +116,135 @@
     </div>
   </section>
 
+
   <!--about section end-->
+
+
+
+  <section
+    class="md:mt-9 mt-2 pt-3 md:pt-[72px] pb-10 md:pb-36 border-t border-slate-200 md:bg-none bg-[url('https://test.mahalaxmidevelopers.com/frontend/images/tattva-apas/TATTVA-CONTACT-FORM-1.jpg')] p-8   bg-no-repeat bg-center bg-cover ">
+    <div class="max-w-screen-3xl flex gap-8 flex-col px-8 md:px-(--space) mx-auto  bg-white/90 py-6 rounded-2xl">
+
+      <div class="flex gap-3 justify-start flex-col">
+        <div class="text-sm font-medium text-natural-green uppercase flex items-center gap-1">
+          <span class="w-2.5 h-2.5 bg-natural-green block pe-2"></span>
+          <span class="motion-preset-typewriter uppercase motion-duration-75">Get In Touch
+          </span>
+        </div>
+
+        <div class="flex md:justify-between gap-4 justify-start md:items-center flex-col md:flex-row">
+          <div class="md:w-3/4 w-full">
+            <h1 class="text-4xl md:text-56 leading-14 md:leading-16">
+              Contact
+              <span
+                class="font-redaction intersect:motion-opacity-in-0 intersect:motion-translate-y-in-100 intersect:motion-duration-[2s] intersect:motion-blur-in-md">
+                Us</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col md:flex-row gap-8 mt-6 ">
+        <div class="w-full md:w-1/2 md:block hidden">
+          <div class="w-full rounded-20 overflow-hidden">
+            <a href="https://test.mahalaxmidevelopers.com/frontend/images/tattva-apas/TATTVA-CONTACT-FORM-1.jpg"
+              class="glightbox" data-gallery="ProjectGallery">
+
+              <img src="https://test.mahalaxmidevelopers.com/frontend/images/tattva-apas/TATTVA-CONTACT-FORM-1.jpg"
+                alt="Event" loading="lazy"
+                class="w-full  object-cover rounded-2xl  
+                          intersect:animate-fade-up intersect:animate-duration-[400ms] intersect:animate-delay-[200ms] intersect:animate-ease-linear intersect:animate-normal animate-fill-both opacity-0"
+                no-intersect="">
+            </a>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 flex flex-col gap-10">
+          <div>
+            <form action="https://test.mahalaxmidevelopers.com/tattva" method="post" id="tattvainquaryform">
+              <input type="hidden" name="_token" value="WuUqMCaFPeW1WpmW1sGox6g69W2fnrDzwxxBxuJA" autocomplete="off">
+              <div class="flex flex-row flex-wrap gap-y-10">
+                <div class="w-full md:w-1/2 p-0 md:pr-4">
+                  <label class="form-label" for="first_name"></label>
+                  <input type="text" placeholder="First Name" id="first_name" name="first_name" value=""
+                    class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600  text-natural-dark  text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full">
+                  <p class="mt-1 text-sm text-red-600 hidden" id="error-first_name" style="color:red !important">Please
+                    enter your first name.</p>
+
+                </div>
+                <div class="w-full md:w-1/2 p-0 md:pl-4">
+                  <label class="form-label" for="last_name"></label>
+                  <input type="text" placeholder="Last Name" id="last_name" name="last_name" value=""
+                    class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full">
+                  <p class="mt-1 text-sm text-red-600 hidden" id="error-last_name" style="color:red !important">Please
+                    enter your last name.</p>
+                </div>
+                <div class="w-full md:w-1/2 p-0 md:pr-4">
+                  <input type="email" placeholder="Email Address" id="email" name="email" value=""
+                    class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full">
+                  <p class="mt-1 text-sm text-red-600 hidden" id="error-email" style="color:red !important">Please enter
+                    your email.</p>
+
+                </div>
+                <div class="w-full md:w-1/2 p-0 md:pl-4">
+
+                  <input type="text" placeholder="Phone Number" id="phone" name="phone" value=""
+                    class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full">
+                  <p class="mt-1 text-sm text-red-600 hidden" id="error-phone" style="color:red !important">Please enter
+                    your phone.</p>
+                </div>
+                <div class="w-full ">
+
+                  <textarea type="text" placeholder="Message" id="message" name="message"
+                    class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full"
+                    rows="7"></textarea>
+                  <p class="mt-1 text-sm text-red-600 hidden" id="error-message" style="color:red !important">Please
+                    enter
+                    your message.</p>
+
+                </div>
+
+                <div class="w-full ">
+                  <!--<div class="g-recaptcha" data-sitekey="6Lf0eMkrAAAAANvsGaB0-lNdv2KpsWFgwX9JcLu7">
+                                        <div style="width: 304px; height: 78px;">
+                                            <div><iframe title="reCAPTCHA" width="304" height="78" role="presentation"
+                                                    name="a-z5cq49kb2v2" frameborder="0" scrolling="no"
+                                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                                                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lf0eMkrAAAAANvsGaB0-lNdv2KpsWFgwX9JcLu7&amp;co=aHR0cDovL2xvY2FsaG9zdDo4MDAw&amp;hl=en&amp;v=-PgDGgfmUF0ySmnjMTJjzqak&amp;size=normal&amp;anchor-ms=20000&amp;execute-ms=15000&amp;cb=pdzcwhg923qq"></iframe>
+                                            </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                                class="g-recaptcha-response"
+                                                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                        </div><iframe style="display: none;"></iframe>
+                                    </div>-->
+                  <div class="g-recaptcha" data-sitekey="6LeXosorAAAAAKfEq1wjbXfZb8CEnc6b3eMnIlzO">
+                    <div style="width: 304px; height: 78px;">
+                      <div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-6kiei4fmrtxp"
+                          frameborder="0" scrolling="no"
+                          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                          src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeXosorAAAAAKfEq1wjbXfZb8CEnc6b3eMnIlzO&amp;co=aHR0cHM6Ly90ZXN0Lm1haGFsYXhtaWRldmVsb3BlcnMuY29tOjQ0Mw..&amp;hl=en&amp;v=cLm1zuaUXPLFw7nzKiQTH1dX&amp;size=normal&amp;anchor-ms=20000&amp;execute-ms=15000&amp;cb=pw37u6bsn6a3"></iframe>
+                      </div><textarea id="g-recaptcha-response" name="g-recaptcha-response" class="g-recaptcha-response"
+                        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                    </div>
+                  </div>
+                  <div id="error-recaptcha" class="error mt-1 text-sm text-red-600 hidden" style="color:red"></div>
+                </div>
+              </div>
+
+              <button type="submit"
+                class="bg-iravi-dark w-auto text-base flex items-center font-normal gap-2 px-4 py-2 rounded-full mt-3 cursor-pointer">
+                <span>Submit</span>
+                <span> <img src="../images/icons/right_arrow.svg" alt="arrow" width="16" height="16" loading="lazy">
+                </span></button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
 
   <!--Amnities-->
   <section class="md:mt-9 mt-2 pt-3 md:pt-[72px] pb-10 md:pb-36 border-t border-slate-200">
@@ -662,21 +790,132 @@
       </section>
 
 
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
 
+    </div>
+  </section>
 
+  <section class="md:mt-9  md:pt-[72px] pb-10 md:pb-36 bg-[url('../images/TATTVA-CONTACT-FORM-2.jpg')]  md:bg-none p-8   
+    bg-no-repeat bg-cover bg-center " id="contact-us">
+    <div class="max-w-screen-3xl flex gap-8 flex-col px-8 md:px-(--space) mx-auto bg-white/90 py-6 rounded-2xl">
 
+      <div class="flex gap-3 justify-start flex-col ">
+        <div class="text-sm font-medium md:text-natural-green uppercase flex items-center gap-1">
+          <span class="w-2.5 h-2.5 bg-natural-green block pe-2"></span>
+          <span class="motion-preset-typewriter uppercase motion-duration-75">We Are Here
+          </span>
+        </div>
 
+        <div class="flex md:justify-between gap-4 justify-start md:items-center flex-col md:flex-row">
+          <div class="md:w-3/4 w-full">
+            <h1 class="text-4xl md:text-56 leading-14 md:leading-16">
+              To
+              <span
+                class="font-redaction intersect:motion-opacity-in-0 intersect:motion-translate-y-in-100 intersect:motion-duration-[2s] intersect:motion-blur-in-md">
+                Help You</span>
+            </h1>
+          </div>
+        </div>
+      </div>
 
+      <div class="flex flex-col md:flex-row gap-8 mt-6  ">
+        <div class="w-full md:w-1/2 flex flex-col gap-10 ">
+          <div>
+            <form action="https://test.mahalaxmidevelopers.com/tattvaappas" method="post" id="tattvainquaryformtwo">
+              <input type="hidden" name="_token" value="WuUqMCaFPeW1WpmW1sGox6g69W2fnrDzwxxBxuJA" autocomplete="off">
+              <div class="flex flex-row flex-wrap gap-y-10">
+                <div class="w-full md:w-1/2 p-0 md:pr-4">
+                  <label class="form-label" for="first_name"></label>
+                  <input type="text" placeholder="First Name" id="first_name_two" name="first_name" value=""
+                    class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600  text-natural-dark  text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full">
+                  <p class="mt-1 text-sm text-red-600 hidden" id="error-first_name_two" style="color:red !important">
+                    Please enter your first name.</p>
 
+                </div>
+                <div class="w-full md:w-1/2 p-0 md:pl-4">
+                  <label class="form-label" for="last_name"></label>
+                  <input type="text" placeholder="Last Name" id="last_name_two" name="last_name" value=""
+                    class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full">
+                  <p class="mt-1 text-sm text-red-600 hidden" id="error-last_name_two" style="color:red !important">
+                    Please
+                    enter your last name.</p>
+                </div>
+                <div class="w-full md:w-1/2 p-0 md:pr-4">
+                  <input type="email" placeholder="Email Address" id="email_two" name="email" value=""
+                    class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full">
+                  <p class="mt-1 text-sm text-red-600 hidden" id="error-email_two" style="color:red !important">Please
+                    enter your email.</p>
 
+                </div>
+                <div class="w-full md:w-1/2 p-0 md:pl-4">
 
+                  <input type="text" placeholder="Phone Number" id="phone_two" name="phone" value=""
+                    class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full">
+                  <p class="mt-1 text-sm text-red-600 hidden" id="error-phone_two" style="color:red !important">Please
+                    enter your phone.</p>
+                </div>
+                <div class="w-full ">
 
+                  <textarea type="text" placeholder="Message" id="message_two" name="message"
+                    class="border-b border-b-semi-dark invalid:border-b-pink-200 invalid:text-pink-600     text-sm font-normal bg-transparent focus:outline-none focus:border-b-natural-green w-full"
+                    rows="7"></textarea>
+                  <p class="mt-1 text-sm text-red-600 hidden" id="error-message_two" style="color:red !important">Please
+                    enter your message.</p>
+
+                </div>
+
+                <div class="w-full ">
+                  <!--<div class="g-recaptcha" data-sitekey="6Lf0eMkrAAAAANvsGaB0-lNdv2KpsWFgwX9JcLu7">
+                                        <div style="width: 304px; height: 78px;">
+                                            <div><iframe title="reCAPTCHA" width="304" height="78" role="presentation"
+                                                    name="a-z5cq49kb2v2" frameborder="0" scrolling="no"
+                                                    sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                                                    src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6Lf0eMkrAAAAANvsGaB0-lNdv2KpsWFgwX9JcLu7&amp;co=aHR0cDovL2xvY2FsaG9zdDo4MDAw&amp;hl=en&amp;v=-PgDGgfmUF0ySmnjMTJjzqak&amp;size=normal&amp;anchor-ms=20000&amp;execute-ms=15000&amp;cb=pdzcwhg923qq"></iframe>
+                                            </div><textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                                                class="g-recaptcha-response"
+                                                style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                                        </div><iframe style="display: none;"></iframe>
+                                    </div>-->
+                  <div class="g-recaptcha" data-sitekey="6LeXosorAAAAAKfEq1wjbXfZb8CEnc6b3eMnIlzO">
+                    <div style="width: 304px; height: 78px;">
+                      <div><iframe title="reCAPTCHA" width="304" height="78" role="presentation" name="a-mpp1ivq41sla"
+                          frameborder="0" scrolling="no"
+                          sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation allow-modals allow-popups-to-escape-sandbox allow-storage-access-by-user-activation"
+                          src="https://www.google.com/recaptcha/api2/anchor?ar=1&amp;k=6LeXosorAAAAAKfEq1wjbXfZb8CEnc6b3eMnIlzO&amp;co=aHR0cHM6Ly90ZXN0Lm1haGFsYXhtaWRldmVsb3BlcnMuY29tOjQ0Mw..&amp;hl=en&amp;v=cLm1zuaUXPLFw7nzKiQTH1dX&amp;size=normal&amp;anchor-ms=20000&amp;execute-ms=15000&amp;cb=wu9oxks2s48y"></iframe>
+                      </div><textarea id="g-recaptcha-response-1" name="g-recaptcha-response"
+                        class="g-recaptcha-response"
+                        style="width: 250px; height: 40px; border: 1px solid rgb(193, 193, 193); margin: 10px 25px; padding: 0px; resize: none; display: none;"></textarea>
+                    </div><iframe style="display: none;"></iframe>
+                  </div>
+                  <div id="error-recaptcha-two" class="error mt-1 text-sm text-red-600 hidden" style="color:red"></div>
+                </div>
+              </div>
+
+              <button type="submit"
+                class="bg-iravi-dark w-auto text-base flex items-center font-normal gap-2 px-4 py-2 rounded-full mt-3 cursor-pointer">
+                <span>Submit</span>
+                <span> <img src="../images/icons/right_arrow.svg" alt="arrow" width="16" height="16" loading="lazy">
+                </span></button>
+            </form>
+          </div>
+        </div>
+        <div class="w-full md:w-1/2 md:block hidden">
+          <div class="w-full rounded-20 overflow-hidden">
+            <a href="https://test.mahalaxmidevelopers.com/frontend/images/tattva-apas/TATTVA-CONTACT-FORM-2.jpg"
+              class="glightbox" data-gallery="ProjectGallery">
+
+              <img src="https://test.mahalaxmidevelopers.com/frontend/images/tattva-apas/TATTVA-CONTACT-FORM-2.jpg"
+                alt="Event" loading="lazy"
+                class="w-full  object-cover rounded-2xl  
+                          intersect:animate-fade-up intersect:animate-duration-[400ms] intersect:animate-delay-[200ms] intersect:animate-ease-linear intersect:animate-normal animate-fill-both opacity-0">
+            </a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!--contact us-->
+
+  <!--contact
   <section id="getintouch" class=" mt-9  pb-10 md:pb-10 lg:pt-[120px] lg:pb-36  ">
     <div class="max-w-screen-3xl mx-auto px-0 md:px-(--space) ">
 
@@ -743,7 +982,7 @@
 
 
     </div>
-  </section>
+  </section>us-->
 
   <!--contact us- end-->
   <!-- Our Highlight -->
